@@ -66,6 +66,7 @@ module.exports = (app) => {
 	    	await klineSv.create(candle);
 	    }
 
+	    await setTimeout(()=>{return ;},1000);
 	    start();
 	}
 
