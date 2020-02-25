@@ -59,14 +59,14 @@ module.exports = (app) => {
 
 	const handle =async (kline)=> {
 		//console.log(app);
-		console.log(kline);
+		// console.log(kline);
 		const klineSv = app.service('kline-real-btc');
 	    for(let candle of kline){
 	    	// console.log(candle);
-	    	// await klineSv.create(candle);
+	    	await klineSv.create(candle);
 	    }
 
-	    // start();
+	    start();
 	}
 
 	function subscribe(ws,from,to) {
