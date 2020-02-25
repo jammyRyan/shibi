@@ -66,8 +66,13 @@ module.exports = (app) => {
 	    	await klineSv.create(candle);
 	    }
 
-	    await setTimeout(()=>{console.log(1) ;},1000);
+	    await delay();
+	    
 	    start();
+	}
+
+	const delay = async ()=>{
+		setTimeout( ()=>{console.log(1); },1000);
 	}
 
 	function subscribe(ws,from,to) {
