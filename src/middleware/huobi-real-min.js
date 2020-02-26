@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 const pako = require('pako');
 
 module.exports = (app) => {
-	const WS_URL = 'wss://api-aws.huobi.pro/ws';
+	const WS_URL = 'wss://api.huobi.pro/ws';
 	var ws = new WebSocket(WS_URL);
     init(ws);
 	// console.log(app);
