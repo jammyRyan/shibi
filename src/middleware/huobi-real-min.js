@@ -80,9 +80,8 @@ module.exports = (app) => {
 	    // 订阅K线
 	    let msg1 = JSON.stringify({
 	        "req": "market.btcusdt.kline.1min",
-	        "id": "somewords",
-	        "from":from,
-	        "to":to
+	        "id": from,
+	        "from":from
 	    });
 	    // let msg1 = JSON.stringify({
 	    //     "sub": "market.BTC_CQ.kline.1min",
