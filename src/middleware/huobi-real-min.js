@@ -53,7 +53,7 @@ module.exports = (app) => {
 	}
 
 	const getTo = from =>{
-		return Number(moment.unix(from).add(1,'d').subtract(1,'m').format('X'));
+		return Number(moment.unix(from).add(299,'m').format('X'));
 		// return from + 432000 - 300;
 	}
 
@@ -81,7 +81,8 @@ module.exports = (app) => {
 	    let msg1 = JSON.stringify({
 	        "req": "market.btcusdt.kline.1min",
 	        "id": "somewords",
-	        "from":from
+	        "from":from,
+	        "to":to
 	    });
 	    // let msg1 = JSON.stringify({
 	    //     "sub": "market.BTC_CQ.kline.1min",
