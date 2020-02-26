@@ -66,14 +66,14 @@ module.exports = (app) => {
 	    	await klineSv.create(candle);
 	    }
 
-	    await delay();
-	    
+	    await delay(1000);
+
 	    start();
 	}
 
-	const delay = async ()=>{
-		setTimeout( ()=>{console.log(1); },1000);
-	}
+	const delay = (timeountMS) => new Promise((resolve) => {
+		setTimeout(resolve, timeountMS);
+	});
 
 	function subscribe(ws,from,to) {
 	    var symbols = ['btcusdt'];
