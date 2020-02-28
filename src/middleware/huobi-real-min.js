@@ -81,13 +81,14 @@ module.exports = (app) => {
 	    let msg1 = JSON.stringify({
 	        "req": "market.btcusdt.kline.1min",
 	        "id": from,
-	        "from":from
+	        "from":from,
+	        "to":to
 	    });
 	    // let msg1 = JSON.stringify({
 	    //     "sub": "market.BTC_CQ.kline.1min",
 	    //     "id": "id1"
 	    // });
-	    // console.log(msg1);
+	    console.log(msg1);
 	    ws.send(msg1);
 	}
 
