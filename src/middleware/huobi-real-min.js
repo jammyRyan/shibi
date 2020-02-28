@@ -66,7 +66,7 @@ module.exports = (app) => {
 	    	await klineSv.create(candle);
 	    }
 
-	    await delay(5000);
+	    await delay(500);
 
 	    start();
 	}
@@ -109,7 +109,7 @@ module.exports = (app) => {
 	            }));
 	            //subscribe(ws);
 	        } else if (msg.status == 'ok') {
-	            console.log(msg);
+	            //console.log(msg);
 	            handle(msg.data);
 	        } else {
 	            console.log(text);
