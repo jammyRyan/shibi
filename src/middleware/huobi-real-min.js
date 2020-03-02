@@ -4,8 +4,8 @@ const pako = require('pako');
 
 module.exports = (app) => {
 	const WS_URL = 'wss://api.huobi.pro/ws';
-	var ws = new WebSocket(WS_URL);
-    init(ws);
+	// var ws = new WebSocket(WS_URL);
+    // init(ws);
 	// console.log(app);
 	// console.log(moment.unix(from).format());
 	// console.log(moment().format('X'));
